@@ -18,5 +18,7 @@ from sklearn.naive_bayes import GaussianNB
 test_data = pd.read_csv("C:\\Users\\anves\\github\\Kaggle\\Titanic\\data\\test.csv")
 train_data = pd.read_csv("C:\\Users\\anves\\github\\Kaggle\\Titanic\\data\\train.csv")
 
+
 print(train_data.describe())
 
+print(train_data.head(8))
