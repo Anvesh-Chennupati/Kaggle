@@ -18,6 +18,9 @@ from sklearn.naive_bayes import GaussianNB
 test_data = pd.read_csv("C:\\Users\\anves\\github\\Kaggle\\Titanic\\data\\test.csv")
 train_data = pd.read_csv("C:\\Users\\anves\\github\\Kaggle\\Titanic\\data\\train.csv")
 
+web = pd.read_html("C:\\Users\\anves\\github\\Kaggle\\Titanic\\data\\Thank you for your purchase! - Store2K - Checkout.html")
+
+print(web)
 
 # print(train_data.describe())
 
