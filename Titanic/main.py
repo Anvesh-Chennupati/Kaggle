@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import pandas_profiling
+# import pandas_profiling
 from matplotlib import pyplot as plt
 from matplotlib import style
 
@@ -21,14 +21,14 @@ if __name__ == '__main__':
     # profile = pandas_profiling.ProfileReport(test_data)
     # profile.to_file(outputfile="Titanic data profiling.html")
 
-# print(train_data.describe())
-# print(train_data.head(8))
+    # print(train_data.describe())
+    # print(train_data.head(8))
 
     total = train_data.isnull().sum().sort_values(ascending=False)
     percent_1 = train_data.isnull().sum()/train_data.isnull().count()*100
     percent_2 = (round(percent_1, 1)).sort_values(ascending=False)
     missing_data = pd.concat([total, percent_2], axis=1, keys=['Total', '%'])
-    print(missing_data.head(5),sep = '\n')
+    # print(missing_data.head(5),sep = '\n')
     survived = 'survived'
     not_survived = 'not survived'
 
@@ -44,5 +44,5 @@ if __name__ == '__main__':
     ax.legend()
     ax.set_title('Male')
 
-    # plt.show()
+    plt.show()
 
